@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NayePankh Foundation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🦅</span>
+                <span class="logo-text">NayePankh Foundation</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Our Programs</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>Get in Touch with NayePankh Foundation</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <h3>📍 Address</h3>
+                    <p>NayePankh Foundation<br>
+                    Community Development Center<br>
+                    Village Road, District<br>
+                    State, PIN Code</p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Phone</h3>
+                    <p>
+                        Main Office: +91 XXXX-XXX-XXXX<br>
+                        Mobile: +91 9XXX-XXX-XXXX<br>
+                        WhatsApp: +91 9XXX-XXX-XXXX
+                    </p>
+                </div>
+                <div class="info-item">
+                    <h3>📧 Email</h3>
+                    <p>
+                        General: chyabhinav263@gmail.com<br>
+                        Programs: abc@nayepankh.org<br>
+                        Donations: xyz@nayepankh.org<br>
+                        Support: xyzt@nayepankh.org
+                    </p>
+                </div>
+                <div class="info-item">
+                    <h3>🕐 Office Hours</h3>
+                    <p>
+                        Monday - Friday: 9:00 AM - 6:00 PM<br>
+                        Saturday: 10:00 AM - 4:00 PM<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="Facebook">f</a>
+                        <a href="#" class="social-icon" title="Twitter">𝕏</a>
+                        <a href="#" class="social-icon" title="Instagram">📷</a>
+                        <a href="#" class="social-icon" title="LinkedIn">in</a>
+                        <a href="#" class="social-icon" title="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <h2>Send us a Message</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 9XXX-XXX-XXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="program">Program Information</option>
+                            <option value="volunteer">Volunteering</option>
+                            <option value="donation">Donation & Sponsorship</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Your message here..." rows="6"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Subscribe to our newsletter for updates</label>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section class="volunteer-section">
+        <h2 class="section-title">Become a Volunteer</h2>
+        <p class="volunteer-intro">Make a real difference in people's lives by joining our volunteer community</p>
+        <div class="volunteer-cards">
+            <div class="volunteer-card">
+                <h3>🎓 Teaching Volunteer</h3>
+                <p>Help children with studies and mentoring. Flexible hours, make a lasting impact on young minds.</p>
+            </div>
+            <div class="volunteer-card">
+                <h3>🏥 Healthcare Volunteer</h3>
+                <p>Assist in medical camps and health awareness programs. Medical background preferred but not required.</p>
+            </div>
+            <div class="volunteer-card">
+                <h3>💻 Technical Volunteer</h3>
+                <p>Support our digital initiatives and technical training programs. Share your IT skills with youth.</p>
+            </div>
+            <div class="volunteer-card">
+                <h3>📋 Administrative Volunteer</h3>
+                <p>Help with program coordination, documentation, and administrative tasks. Remote options available.</p>
+            </div>
+        </div>
+        <a href="#contactForm" class="cta-button">Register as a Volunteer</a>
+    </section>
+
+    <!-- Ways to Support -->
+    <section class="support-section">
+        <h2 class="section-title">Ways to Support Us</h2>
+        <div class="support-methods">
+            <div class="support-method">
+                <div class="method-icon">💰</div>
+                <h3>Monetary Donations</h3>
+                <p>Direct financial support helps us expand our programs and reach more beneficiaries.</p>
+            </div>
+            <div class="support-method">
+                <div class="method-icon">📚</div>
+                <h3>Resource Donation</h3>
+                <p>Books, stationery, medical supplies, or other resources can directly help our programs.</p>
+            </div>
+            <div class="support-method">
+                <div class="method-icon">🤝</div>
+                <h3>Corporate Partnership</h3>
+                <p>Businesses can partner with us for CSR initiatives and employee volunteering programs.</p>
+            </div>
+            <div class="support-method">
+                <div class="method-icon">📱</div>
+                <h3>Spread the Word</h3>
+                <p>Share our work on social media and help us reach more people who need our support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">How can I volunteer with NayePankh?</button>
+                <div class="faq-answer">
+                    <p>You can fill out the contact form above with "Volunteering" as the subject, or call our main office. We'll guide you through the registration process and help you find the right volunteer role based on your skills and interests.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How is your organization funded?</button>
+                <div class="faq-answer">
+                    <p>We are funded through individual donations, corporate partnerships, grants, and government support. All funds are utilized transparently for our programs and activities.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Are donations tax-deductible?</button>
+                <div class="faq-answer">
+                    <p>Yes, NayePankh Foundation is a registered NGO and donations may be eligible for tax deduction. Contact our donation department for more information and tax documentation.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Which communities do you serve?</button>
+                <div class="faq-answer">
+                    <p>We primarily serve rural and semi-urban communities in the region, with a focus on underprivileged and marginalized populations. We work across multiple villages and districts.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can I refer someone for your programs?</button>
+                <div class="faq-answer">
+                    <p>You can refer individuals through our contact form, or call us directly. We'll evaluate their eligibility and help them enroll in the appropriate programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About NayePankh</h4>
+                <p>A dedicated NGO working towards community development and social empowerment.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@nayepankh.org</p>
+                <p>Phone: +91 XXXX-XXX-XXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NayePankh Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
